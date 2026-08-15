@@ -42,6 +42,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
+          prefetch={false}
           className="group flex items-center gap-2 font-heading text-lg font-semibold tracking-tight"
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-crimson-500 text-sm font-bold text-white transition-transform group-hover:scale-110">
@@ -81,6 +82,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/contact"
+          prefetch={false}
           onClick={() => setMobileOpen(false)}
           className="hidden rounded-full bg-crimson-500 px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105 md:inline-flex"
         >
@@ -130,6 +132,7 @@ export default function Navbar() {
               })}
               <Link
                 href="/contact"
+                prefetch={false}
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 rounded-full bg-crimson-500 px-4 py-3 text-center text-sm font-semibold text-white"
               >
