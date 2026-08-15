@@ -40,7 +40,7 @@ export default function CertificateGrid() {
                   />
                 ) : (
                   <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
-                    <PdfThumbnail file={cert.file} />
+                    <PdfThumbnail file={cert.file} eager={index < 6} />
                   </div>
                 )}
 
