@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import ErudaLoader from "@/components/layout/ErudaLoader";
 import Footer from "@/components/layout/Footer";
 import { SITE } from "@/data/site";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} font-body bg-background text-foreground antialiased`}
       >
+        <ErudaLoader />
 
         <Navbar />
         <div className="pb-16 md:pb-0">{children}</div>
