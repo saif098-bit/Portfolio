@@ -5,6 +5,7 @@ export interface Certificate {
   date: string;
   format: "image" | "pdf";
   file: string; // path to the image OR the pdf
+  thumbnail?: string; // static preview image for PDFs, shown in the grid instead of live-rendering the PDF
   description: string;
   verifyUrl?: string; // leave undefined/omit for non-verifiable certificates
 }
@@ -17,6 +18,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-for-Builders.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-for-Builders.jpg",
     description:
       "A certification focused on applying AI effectively to build, solve, and innovate with modern AI tools.",
     verifyUrl: "https://verify.skilljar.com/c/atpnbcyb7u44",
@@ -28,6 +30,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-for-nonprofits.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-for-nonprofits.jpg",
     description:
       "A certification focused on using AI effectively to improve nonprofit operations, impact, and innovation.",
     verifyUrl: "https://verify.skilljar.com/c/ozwmhgf8e2nr",
@@ -39,6 +42,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/Claude-Code-101.pdf",
+    thumbnail: "/images/certificate-thumbs/Claude-Code-101.jpg",
     description:
       "Introduction to Claude Code, covering AI-assisted coding, development workflows, and practical software-building techniques.",
     verifyUrl: "https://verify.skilljar.com/c/nw6h9pkohwvx",
@@ -50,6 +54,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/Claude-Code-in-Action.pdf",
+    thumbnail: "/images/certificate-thumbs/Claude-Code-in-Action.jpg",
     description:
       "Practical experience using Claude Code for AI-assisted software development, automation, and real-world coding workflows.",
     verifyUrl: "https://verify.skilljar.com/c/df5hnmu8kv7c",
@@ -61,6 +66,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-For-Educators.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-For-Educators.jpg",
     description:
       "Practical AI skills for educators, focused on enhancing teaching, learning, productivity, and classroom innovation.",
     verifyUrl: "https://verify.skilljar.com/c/esw3i4sgw8yd",
@@ -72,6 +78,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Aug 2026",
     format: "pdf",
     file: "/images/certificates/Teaching-The-AI-Fluency-Framework.pdf",
+    thumbnail: "/images/certificate-thumbs/Teaching-The-AI-Fluency-Framework.jpg",
     description:
       "A practical framework for teaching effective AI use, covering core concepts, responsible practices, and real-world applications.",
     verifyUrl: "https://verify.skilljar.com/c/ix7x68aas7wd",
@@ -94,6 +101,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-for-Small-Businesses.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-for-Small-Businesses.jpg",
     description:
       "Practical AI skills for small businesses to improve productivity, efficiency, decision-making, and growth.",
     verifyUrl: "https://verify.skilljar.com/c/3orohhkdnfih",
@@ -105,6 +113,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-for-Students.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-for-Students.jpg",
     description:
       "Practical AI skills for students to enhance learning, productivity, research, and future career readiness.",
     verifyUrl: "https://verify.skilljar.com/c/68wzfkqwdh4f",
@@ -116,6 +125,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-AI-Capabilities-&-Limitations.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-AI-Capabilities-&-Limitations.jpg",
     description:
       "Understanding AI capabilities and limitations to use AI effectively, responsibly, and with realistic expectations.",
     verifyUrl: "https://verify.skilljar.com/c/t5owxobkiinr",
@@ -127,6 +137,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/Introduction-to-Claude-Cowork.pdf",
+    thumbnail: "/images/certificate-thumbs/Introduction-to-Claude-Cowork.jpg",
     description:
       "An introduction to Claude Cowork, exploring AI-powered task automation, productivity, and collaborative workflows.",
     verifyUrl: "https://verify.skilljar.com/c/hdtbzbcxw356",
@@ -138,6 +149,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/AI-Fluency-Framework-&-Foundations.pdf",
+    thumbnail: "/images/certificate-thumbs/AI-Fluency-Framework-&-Foundations.jpg",
     description:
       "Core principles and foundational concepts for understanding, evaluating, and effectively using AI.",
     verifyUrl: "https://verify.skilljar.com/c/c4iwe7nsw4cm",
@@ -149,6 +161,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jul 2026",
     format: "pdf",
     file: "/images/certificates/Claude-101.pdf",
+    thumbnail: "/images/certificate-thumbs/Claude-101.jpg",
     description:
       "Fundamentals of Claude, covering its features, capabilities, and practical applications for everyday tasks and workflows.",
     verifyUrl: "https://verify.skilljar.com/c/wzoprcsqxo6a",
@@ -204,6 +217,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Jun 2026",
     format: "pdf",
     file: "/images/certificates/Prompt-engineering.pdf",
+    thumbnail: "/images/certificate-thumbs/Prompt-engineering.jpg",
     description:
       "Successfully completed the One Million Prompters initiative, developing prompt engineering skills for AI systems and contributing to a future-ready AI workforce.",
     verifyUrl: "https://omp.dub.ai/certificate/C9RzvdVpeUKK",
@@ -237,6 +251,7 @@ export const CERTIFICATES: Certificate[] = [
     date: "Sep 2023",
     format: "pdf",
     file: "/images/certificates/Graphic-Designing-Certificate.pdf",
+    thumbnail: "/images/certificate-thumbs/Graphic-Designing-Certificate.jpg",
     description:
       "Successfully completed the Graphic Designing (UI/UX Designer) certificate course under the Prime Minister’s Youth Skills Development Program, achieving an A+ grade at Government Technical and Vocational Centre Boys, Nawan Sheher Abbottabad.",
     verifyUrl: "",
