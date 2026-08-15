@@ -5,6 +5,7 @@ export const metadata = {
   title: "Experience | Malik Saifullah",
   description: "Internships, hands-on roles, and academic work — FlyRank AI, InfinityWave Inc, Al-Khidmat Pakistan, and University of Haripur.",
 };
+export const dynamic = "force-static";
 
 export default function ExperiencePage() {
   return (

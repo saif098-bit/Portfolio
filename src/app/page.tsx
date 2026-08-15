@@ -1,9 +1,13 @@
+import nextDynamic from "next/dynamic";
 import Hero from "@/components/hero/Hero";
 import StatsStrip from "@/components/home/StatsStrip";
-import ExperiencePreview from "@/components/home/ExperiencePreview";
-import ProjectsPreview from "@/components/home/ProjectsPreview";
-import SkillsMarquee from "@/components/home/SkillsMarquee";
-import CTASection from "@/components/home/CTASection";
+
+export const dynamic = "force-static";
+
+const ExperiencePreview = nextDynamic(() => import("@/components/home/ExperiencePreview"));
+const ProjectsPreview = nextDynamic(() => import("@/components/home/ProjectsPreview"));
+const SkillsMarquee = nextDynamic(() => import("@/components/home/SkillsMarquee"));
+const CTASection = nextDynamic(() => import("@/components/home/CTASection"));
 
 export default function Home() {
   return (

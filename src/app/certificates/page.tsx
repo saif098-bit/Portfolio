@@ -6,6 +6,8 @@ export const metadata = {
   description: "Verified courses and internship certifications completed by Malik Saifullah, including Anthropic Academy and Microsoft AI credentials.",
 };
 
+export const dynamic = "force-static";
+
 export default function CertificatesPage() {
   return (
     <main className="min-h-screen px-6 pt-40 pb-28 md:px-12 lg:px-20">

@@ -10,6 +10,8 @@ export const metadata = {
   description: "An inside look at Malik Saifullah's 8-week backend engineering internship at FlyRank AI — assignments, tech stack, and repository.",
 };
 
+export const dynamic = "force-static";
+
 export default function FlyRankCaseStudyPage() {
   return (
     <main className="min-h-screen px-6 pt-40 pb-28 md:px-12 lg:px-20">

@@ -11,6 +11,8 @@ export const metadata = {
   description: "Get in touch with Malik Saifullah — email, WhatsApp, GitHub, and LinkedIn.",
 };
 
+export const dynamic = "force-static";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen px-6 pt-40 pb-28 md:px-12 lg:px-20">

@@ -8,6 +8,8 @@ export const metadata = {
   description: "Independent full-stack and automation projects — REST APIs, role-based platforms, and n8n-orchestrated AI agents.",
 };
 
+export const dynamic = "force-static";
+
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen px-6 pt-40 pb-28 md:px-12 lg:px-20">
