@@ -7,7 +7,12 @@ import { Expand, BadgeCheck, ShieldQuestion, FileText } from "lucide-react";
 import { CERTIFICATES, Certificate } from "@/data/certificates";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import CertificateModal from "./CertificateModal";
-import PdfThumbnail from "./PdfThumbnail";
+import dynamic from "next/dynamic";
+
+const PdfThumbnail = dynamic(() => import("./PdfThumbnail"), {
+  ssr: false,
+  loading: () => <div className="h-full w-full animate-pulse bg-white/5" />,
+});
 
 export default function CertificateGrid() {
   const [selected, setSelected] = useState<Certificate | null>(null);

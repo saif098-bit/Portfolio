@@ -10,11 +10,13 @@ import {
   ShieldQuestion,
   Download,
 } from "lucide-react";
-import { Document, Page, pdfjs } from "react-pdf";
+import dynamic from "next/dynamic";
 import { Certificate } from "@/data/certificates";
 
-pdfjs.GlobalWorkerOptions.workerSrc =
-  `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+const CertificatePdfViewer = dynamic(() => import("./CertificatePdfViewer"), {
+  ssr: false,
+  loading: () => <div className="h-40 w-full animate-pulse bg-white/5" />,
+});
 
 export default function CertificateModal({
   certificate,
@@ -118,21 +120,7 @@ export default function CertificateModal({
                   />
                 </div>
               ) : pdfWidth ? (
-                <Document
-                  file={certificate.file}
-                  loading={null}
-                  error={null}
-                  className="flex items-center justify-center"
-                >
-                  <Page
-                    pageNumber={1}
-                    width={pdfWidth}
-                    devicePixelRatio={2}
-                    renderTextLayer={false}
-                    renderAnnotationLayer={false}
-                    loading={null}
-                  />
-                </Document>
+                <CertificatePdfViewer file={certificate.file} width={pdfWidth} />
               ) : null}
             </div>
 
