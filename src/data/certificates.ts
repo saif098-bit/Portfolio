@@ -239,7 +239,7 @@ export const CERTIFICATES: Certificate[] = [
     issuer: "Arch Technologies",
     date: "Mar 2026 – Apr 2026",
     format: "image",
-    file: "/images/certificates/Arch-Technologies.jpeg",
+    file: "/images/certificates/Arch_Technologies.jpeg",
     description:
       "Successfully completed an 8-week Machine Learning Internship and Training Program at Arch Technologies.",
     verifyUrl: "",
