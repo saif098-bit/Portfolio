@@ -113,6 +113,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               href="/projects"
+              prefetch={false}
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-crimson-500 px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105"
             >
               <span className="relative z-10">View Projects</span>
@@ -122,6 +123,7 @@ export default function Hero() {
 
             <Link
               href="/contact"
+              prefetch={false}
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-crimson-500 hover:text-crimson-300"
             >
               Get in Touch

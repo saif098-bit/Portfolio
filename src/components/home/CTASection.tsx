@@ -14,7 +14,7 @@ export default function CTASection() {
           <p className="relative mx-auto mt-4 max-w-lg text-muted">
             Currently open to internships, collaborations, and interesting backend/AI problems.
           </p>
-          <Link href="/contact" className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-crimson-500 px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105">
+          <Link href="/contact" prefetch={false} className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-crimson-500 px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105">
             Let&apos;s Talk
             <ArrowRight className="h-4 w-4" />
           </Link>

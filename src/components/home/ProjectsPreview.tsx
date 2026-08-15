@@ -12,8 +12,7 @@ export default function ProjectsPreview() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Selected Work" title={<>Recent <span className="text-gradient">projects</span></>} />
-          <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-medium text-crimson-400 transition-colors hover:text-crimson-300">
-            All projects <ArrowRight className="h-4 w-4" />
+          <Link href="/projects" prefetch={false} className="inline-flex items-center gap-2 text-sm font-medium text-crimson-400 transition-colors hover:text-crimson-300">
           </Link>
         </div>
 

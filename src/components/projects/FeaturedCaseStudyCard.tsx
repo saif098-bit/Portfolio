@@ -53,6 +53,7 @@ export default function FeaturedCaseStudyCard() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/projects/flyrank-backend-internship"
+              prefetch={false}
               className="group/btn inline-flex items-center gap-2 rounded-full bg-crimson-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
             >
               Explore Case Study

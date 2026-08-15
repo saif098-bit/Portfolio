@@ -12,7 +12,7 @@ export default function ExperiencePreview() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Right Now" title={<>Currently <span className="text-gradient">building & learning</span></>} />
-          <Link href="/experience" className="inline-flex items-center gap-2 text-sm font-medium text-crimson-400 transition-colors hover:text-crimson-300">
+          <Link href="/experience" prefetch={false} className="inline-flex items-center gap-2 text-sm font-medium text-crimson-400 transition-colors hover:text-crimson-300">
             Full timeline <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

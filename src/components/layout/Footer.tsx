@@ -20,9 +20,9 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-5 text-sm text-muted">
-          <Link href="/experience" className="hover:text-crimson-400">Experience</Link>
-          <Link href="/projects" className="hover:text-crimson-400">Projects</Link>
-          <Link href="/contact" className="hover:text-crimson-400">Contact</Link>
+          <Link href="/experience" prefetch={false} className="hover:text-crimson-400">Experience</Link>
+          <Link href="/projects" prefetch={false} className="hover:text-crimson-400">Projects</Link>
+          <Link href="/contact" prefetch={false} className="hover:text-crimson-400">Contact</Link>
         </div>
       </div>
     </footer>
