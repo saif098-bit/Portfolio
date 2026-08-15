@@ -61,6 +61,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                prefetch={false}
                 className="group relative px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
               >
                 <span className={cn(isActive && "text-foreground")}>
