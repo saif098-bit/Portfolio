@@ -12,9 +12,8 @@ export default function FeaturedCaseStudyCard() {
     <RevealOnScroll>
       <div className="group relative overflow-hidden rounded-3xl border border-crimson-500/25 bg-gradient-to-br from-crimson-900/20 via-surface to-black/40 p-7 shadow-2xl shadow-crimson-950/40 sm:p-10">
         {/* Ambient glow */}
-        <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-crimson-600/20 blur-[100px]" />
-        <div className="pointer-events-none absolute -right-10 bottom-0 h-56 w-56 rounded-full bg-crimson-500/10 blur-[90px]" />
-
+        <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-crimson-600/20 blur-xl sm:blur-[100px]" />
+        <div className="pointer-events-none absolute -right-10 bottom-0 h-56 w-56 rounded-full bg-crimson-500/10 blur-xl sm:blur-[90px]" />
         <div className="relative">
           <span className="inline-flex items-center gap-2 rounded-full border border-crimson-500/40 bg-crimson-500/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-crimson-300">
             <Sparkles className="h-3.5 w-3.5" />
