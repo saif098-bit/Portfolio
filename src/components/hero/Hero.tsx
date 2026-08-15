@@ -148,7 +148,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           className="relative mx-auto flex justify-center [perspective:1000px]"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
@@ -193,7 +193,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-muted"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
+        transition={{ delay: 0.6 }}
       >
         <div className="flex flex-col items-center gap-2 animate-bounce-slow">
           <span className="text-[11px] uppercase tracking-[0.2em]">Scroll</span>
