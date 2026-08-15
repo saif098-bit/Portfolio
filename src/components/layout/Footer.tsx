@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative border-t border-white/10 bg-background px-6 py-10 md:px-12 lg:px-20">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
         <p className="text-sm text-muted">
-          © {new Date().getFullYear()} {SITE.name}. Built with Next.js & Tailwind.
+          © 2026 {SITE.name}. Built with Next.js & Tailwind.
         </p>
 
         <div className="flex items-center gap-4">
