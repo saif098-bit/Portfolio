@@ -9,12 +9,14 @@ const ICONS: Record<ExperienceType, typeof Briefcase> = {
   work: Briefcase,
   volunteer: HeartHandshake,
   education: GraduationCap,
+  internship: Briefcase,
 };
 
 const TYPE_LABEL: Record<ExperienceType, string> = {
   work: "Work",
   volunteer: "Volunteering",
   education: "Education",
+  internship: "Internship",
 };
 
 export default function ExperienceTimeline() {
