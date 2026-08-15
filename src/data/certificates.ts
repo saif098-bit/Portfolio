@@ -234,6 +234,17 @@ export const CERTIFICATES: Certificate[] = [
     verifyUrl: "",
   },
   {
+    id: "Arch-Technologies",
+    title: "Machine Learning Internship",
+    issuer: "Arch Technologies",
+    date: "Mar 2026 – Apr 2026",
+    format: "image",
+    file: "/images/certificates/Arch-Technologies.jpeg",
+    description:
+      "Successfully completed an 8-week Machine Learning Internship and Training Program at Arch Technologies.",
+    verifyUrl: "",
+  },
+  {
     id: "Cybersecurity-Internship",
     title: "Cybersecurity Internship",
     issuer: "Technik Nest (Private Limited)",

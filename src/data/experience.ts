@@ -1,4 +1,4 @@
-export type ExperienceType = "work" | "volunteer" | "education";
+export type ExperienceType = "work" | "volunteer" | "education" | "internship";
 
 export interface ExperienceItem {
   id: string;
@@ -52,6 +52,20 @@ export const EXPERIENCE: ExperienceItem[] = [
     ],
     tags: ["Community Outreach", "Communication", "Leadership"],
   },
+  {
+  id: "arch-technologies",
+  type: "internship",
+  role: "Machine Learning Intern",
+  organization: "Arch Technologies",
+  period: "1st March – 28th April 2026",
+  current: false,
+  bullets: [
+    "Completed an 8-week Machine Learning Internship and Training Program at Arch Technologies.",
+    "Gained practical experience in machine learning concepts, model development, and data-driven problem solving.",
+    "Strengthened technical skills through hands-on training and practical machine learning tasks."
+  ],
+  tags: ["Machine Learning", "Python", "Data Science"],
+},
   {
     id: "education",
     type: "education",
