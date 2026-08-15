@@ -5,9 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { SITE } from "@/data/site";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
-import dynamic from "next/dynamic";
-
-const ChatWidget = dynamic(() => import("@/components/chatbot/ChatWidget"), { ssr: false });
+import ChatWidgetLoader from "@/components/chatbot/ChatWidgetLoader";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -38,7 +36,7 @@ export default function RootLayout({
         <Navbar />
         <div className="pb-16 md:pb-0">{children}</div>
         <Footer />
-        <ChatWidget />
+        <ChatWidgetLoader />
         <MobileBottomNav />
       </body>
     </html>
