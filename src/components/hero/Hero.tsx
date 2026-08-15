@@ -165,7 +165,7 @@ export default function Hero() {
 
             <div className="relative h-full w-full overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-crimson-900/40">
               <Image
-                src="/images/hero.jpg"
+                src="/images/hero.webp"
                 alt="Saifullah — AI Engineer & Backend Developer"
                 fill
                 priority
