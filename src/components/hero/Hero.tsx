@@ -169,7 +169,6 @@ export default function Hero() {
                 alt="Saifullah — AI Engineer & Backend Developer"
                 fill
                 priority
-                quality={95}
                 className="object-cover"
                 sizes="(max-width: 768px) 300px, 420px"
               />
