@@ -73,4 +73,17 @@ export const PROJECTS: Project[] = [
     tech: ["Python", "Flask", "SQLite", "Ollama"],
     githubUrl: "https://github.com/saif098-bit/hotelbot",
   },
+  {
+    id: "portfolio-website",
+    title: "Personal Portfolio Website",
+    description:
+      "This site — a premium, animated portfolio with an AI chatbot, live PDF certificate previews, and a dedicated case-study page for my FlyRank AI internship.",
+    bullets: [
+      "Built a fully responsive Next.js portfolio with a custom animated hero, scroll-triggered reveals, and a mobile-first bottom navigation for full page discoverability.",
+      "Integrated a Groq-powered AI chatbot that answers visitor questions using structured data pulled directly from the site's own content.",
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Groq API"],
+    githubUrl: "https://github.com/saif098-bit/Portfolio",
+    featured: true,
+  },
 ];
