@@ -83,7 +83,96 @@ export const CERTIFICATES: Certificate[] = [
       "A practical framework for teaching effective AI use, covering core concepts, responsible practices, and real-world applications.",
     verifyUrl: "https://verify.skilljar.com/c/ix7x68aas7wd",
   },
+
   {
+    "id": "Claude-Anthropic-API",
+    "title": "Claude with the Anthropic API",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Building with the Claude API.pdf",
+    "thumbnail": "/images/certificate-thumbs/Building with the Claude API.jpg",
+    "description": "Comprehensive course on building applications using Claude via the Anthropic API, focusing on prompt engineering, tool use, and implementing the Model Context Protocol.",
+    "verifyUrl": "https://verify.skilljar.com/c/9kscg4iuh6ak"
+  },
+  {
+    "id": "Claude-Amazon-Bedrock",
+    "title": "Claude with Amazon Bedrock",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Claude in Amazon Bedrock.pdf",
+    "thumbnail": "/images/certificate-thumbs/Claude in Amazon Bedrock.jpg",
+    "description": "Training on implementing Claude's API to build production-ready applications, retrieval-augmented generation (RAG) systems, and autonomous agents within the AWS managed infrastructure.",
+    "verifyUrl": "https://verify.skilljar.com/c/mvat4qt7r2v9"
+  },
+  {
+    "id": "Claude-Google-Vertex",
+    "title": "Claude with Google Vertex AI",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Claude on Google Cloud.pdf",
+    "thumbnail": "/images/certificate-thumbs/Claude on Google Cloud.jpg",
+    "description": "Instructions for leveraging Claude models through Google Cloud's Vertex AI platform, including integrating managed AI endpoints into scalable production environments.",
+    "verifyUrl": "https://verify.skilljar.com/c/un5co4n85jay"
+  },
+  {
+    "id": "Claude-Platform-101",
+    "title": "Claude Platform 101",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Claude Platform 101.pdf",
+    "thumbnail": "/images/certificate-thumbs/Claude Platform 101.jpg",
+    "description": "Core fundamentals of navigating and operating within the Claude developer platform, covering basic capabilities, console management, and everyday workflows.",
+    "verifyUrl": "https://verify.skilljar.com/c/erexv6w2rhoy"
+  },
+  {
+    "id": "Intro-Agent-Skills",
+    "title": "Introduction to agent skills",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Introduction to agent skills.pdf",
+    "thumbnail": "/images/certificate-thumbs/Introduction to agent skills.jpg",
+    "description": "Covers how to build, configure, and share skills in Claude Code—reusable markdown instructions that Claude automatically applies to matching tasks for consistent team workflows.",
+    "verifyUrl": "https://verify.skilljar.com/c/8o5rwkyg59rx"
+  },
+  {
+    "id": "Intro-MCP",
+    "title": "Introduction to Model Context Protocol",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Introduction to Model Context Protocol.pdf",
+    "thumbnail": "/images/certificate-thumbs/Introduction to Model Context Protocol.jpg",
+    "description": "Learn to build modular AI applications using MCP to connect Claude with external tools and data sources, encompassing both server and client implementations.",
+    "verifyUrl": "https://verify.skilljar.com/c/w6brgr6cqixz"
+  },
+  {
+    "id": "Intro-Subagents",
+    "title": "Introduction to subagents",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Introduction to subagents.pdf",
+    "thumbnail": "/images/certificate-thumbs/Introduction to subagents.jpg",
+    "description": "Techniques for structuring, delegating tasks, and orchestrating multiple AI subagents to handle complex, multi-step operations effectively.",
+    "verifyUrl": "https://verify.skilljar.com/c/djsx5jjyawi2"
+  },
+  {
+    "id": "MCP-Advanced",
+    "title": "Model Context Protocol: Advanced Topics",
+    "issuer": "Anthropic Academy",
+    "date": "Aug 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Model Context Protocol Advanced Topics.pdf",
+    "thumbnail": "/images/certificate-thumbs/Model Context Protocol Advanced Topics.jpg",
+    "description": "Deep dive into advanced configurations, custom integrations, scaling strategies, and troubleshooting with the Model Context Protocol.",
+    "verifyUrl": "https://verify.skilljar.com/c/xzg8gkf9f5nn"
+  },
+    {
     id: "Are-Prompts-The-New-Programming-Language",
     title: "Are Prompts The New Programming Language",
     issuer: "Volume Up with SES",
@@ -155,18 +244,6 @@ export const CERTIFICATES: Certificate[] = [
     verifyUrl: "https://verify.skilljar.com/c/c4iwe7nsw4cm",
   },
   {
-    id: "Claude-101",
-    title: "Claude 101",
-    issuer: "Anthropic Academy",
-    date: "Jul 2026",
-    format: "pdf",
-    file: "/images/certificates/Claude-101.pdf",
-    thumbnail: "/images/certificate-thumbs/Claude-101.jpg",
-    description:
-      "Fundamentals of Claude, covering its features, capabilities, and practical applications for everyday tasks and workflows.",
-    verifyUrl: "https://verify.skilljar.com/c/wzoprcsqxo6a",
-  },
-  {
     id: "Design-Responsile-AI",
     title: "Design Responsible AI Security, Governance, Risk Management, and Compliance",
     issuer: "Microsoft",
@@ -198,6 +275,17 @@ export const CERTIFICATES: Certificate[] = [
     description:
       "Successfully completed Microsoft training focused on monitoring, analyzing, and tuning AI agents for improved performance and reliability.",
     verifyUrl: "",
+  },
+  {
+    "id": "Claude-101",
+    "title": "Claude 101",
+    "issuer": "Anthropic Academy",
+    "date": "Jul 2026",
+    "format": "pdf",
+    "file": "/images/certificates/Claude-101.pdf",
+    "thumbnail": "/images/certificate-thumbs/Claude-101.jpg",
+    "description": "Fundamentals of Claude, covering its core features, capabilities, and practical applications for streamlining everyday tasks and professional workflows.",
+    "verifyUrl": "https://verify.skilljar.com/c/wzoprcsqxo6a"
   },
   {
     id: "Intro-to-Agentic-AI",

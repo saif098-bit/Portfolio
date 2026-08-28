@@ -86,4 +86,17 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/saif098-bit/Portfolio",
     featured: true,
   },
+  {
+  id: "ai-image-understanding-content-matching",
+  title: "AI Image Understanding & Content Matching Engine",
+  description:
+    "A production-grade FastAPI backend that analyzes images with Vision AI, generates semantic embeddings, and matches images to blog posts using PostgreSQL + pgvector, with a 3-layer Mismatch Guard for safe, explainable rejection of incorrect or low-confidence matches.",
+  bullets: [
+    "Built a FastAPI backend that uses local Ollama Vision AI to analyze images, generates semantic embeddings, and matches images to blog posts using PostgreSQL and pgvector.",
+    "Implemented a 3-layer Mismatch Guard that combines category validation and similarity thresholds to safely reject incorrect or low-confidence image-content pairings with human-readable explanations.",
+    "Developed a human review API with approval/rejection workflows and audit history, supported by 73 automated tests and an evaluation benchmark achieving 80% Top-1 precision."
+  ],
+  tech: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Ollama", "Docker"],
+  githubUrl: "https://github.com/saif098-bit/flyrank-capstone-image-relevance",
+ },
 ];
