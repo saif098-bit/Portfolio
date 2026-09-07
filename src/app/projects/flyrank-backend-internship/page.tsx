@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
-import { FLYRANK_INTERNSHIP } from "@/data/flyrank-internship";
+import {
+  FLYRANK_INTERNSHIP,
+  CAPSTONE_PROJECT,
+} from "@/data/flyrank-internship";
 import AssignmentTimeline from "@/components/projects/AssignmentTimeline";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
@@ -74,11 +77,67 @@ export default function FlyRankCaseStudyPage() {
 
         <AssignmentTimeline />
 
-        {/* 03 — GitHub */}
+{/* 03 — Capstone Project */}
+<RevealOnScroll delay={0.1}>
+  <div className="mt-20">
+    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-crimson-400">
+      03 — Capstone Project
+    </p>
+
+    <div className="mt-5 rounded-3xl border border-crimson-500/25 bg-gradient-to-br from-crimson-900/15 via-surface to-black/30 p-7 shadow-2xl shadow-crimson-950/20 sm:p-10">
+      <div className="flex flex-col gap-6">
+        <div>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-crimson-500/30 bg-crimson-500/10 px-3 py-1.5 text-xs font-semibold text-crimson-300">
+              🏆 Capstone Project
+            </span>
+
+            <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-muted">
+              {CAPSTONE_PROJECT.status}
+            </span>
+          </div>
+
+          <h2 className="mt-5 font-heading text-2xl font-semibold leading-tight sm:text-3xl">
+            {CAPSTONE_PROJECT.title}
+          </h2>
+
+          <p className="mt-2 text-sm font-medium text-crimson-300">
+            {CAPSTONE_PROJECT.tagline}
+          </p>
+
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
+            {CAPSTONE_PROJECT.description}
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-heading text-sm font-semibold">
+            Technology Stack
+          </h3>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            {CAPSTONE_PROJECT.techStack.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-muted"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</RevealOnScroll>
+
+{/* 04 — GitHub */}
+
+        {/* 04 — GitHub */}
         <RevealOnScroll delay={0.1}>
           <div className="mt-20 rounded-3xl border border-white/10 bg-surface/60 p-8 text-center sm:p-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-crimson-400">
-              03 — GitHub Repository
+              04 — GitHub Repository
             </p>
             <h2 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
               Explore the Full Repository

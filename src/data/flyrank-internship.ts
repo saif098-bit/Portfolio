@@ -60,3 +60,20 @@ export const ASSIGNMENTS: Assignment[] = [
     tags: ["Security", "Technical Docs"],
   },
 ];
+export const CAPSTONE_PROJECT = {
+  title: "AI Image Understanding & Content Matching Engine",
+  tagline: "Production-grade AI decision engine",
+  description:
+    "Built a production-grade AI decision engine that tags images via Vision AI, indexes semantic embeddings in pgvector, matches images to articles, and enforces a 3-Layer Mismatch Guard covering category, threshold, and confidence validation to safely reject incorrect pairings. The system also features background batch jobs with retries, cost tracking, and an 80.0% Top-1 Precision benchmark.",
+  techStack: [
+    "FastAPI",
+    "PostgreSQL 16 + pgvector",
+    "Alembic",
+    "Ollama",
+    "LLaVA",
+    "all-MiniLM",
+    "Docker Compose",
+    "Pytest",
+  ],
+  status: "Completed & Submitted",
+};

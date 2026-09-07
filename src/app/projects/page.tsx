@@ -16,7 +16,7 @@ export default function ProjectsPage() {
       <SectionHeading
         eyebrow="Built & Shipped"
         title={<>Things I&apos;ve <span className="text-gradient">built</span></>}
-        description="Five independent full-stack and automation projects, plus a structured backend engineering internship."
+        description="Seven independent full-stack and automation projects, plus a structured backend engineering internship."
       />
 
       <div className="mt-16">

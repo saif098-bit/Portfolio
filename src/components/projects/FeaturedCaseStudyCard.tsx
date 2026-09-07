@@ -4,7 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
-import { FLYRANK_INTERNSHIP, ASSIGNMENTS } from "@/data/flyrank-internship";
+import {
+  FLYRANK_INTERNSHIP,
+  ASSIGNMENTS,
+  CAPSTONE_PROJECT,
+} from "@/data/flyrank-internship";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 export default function FeaturedCaseStudyCard() {
@@ -30,20 +34,34 @@ export default function FeaturedCaseStudyCard() {
             {FLYRANK_INTERNSHIP.summary}
           </p>
 
-          {/* Assignment number chips */}
-          <div className="mt-8 flex flex-wrap gap-3">
-            {ASSIGNMENTS.map((a) => (
-              <div
-                key={a.number}
-                className="flex min-w-[92px] flex-col items-start gap-1 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 transition-colors group-hover:border-crimson-500/20"
-              >
-                <span className="font-heading text-lg font-semibold text-crimson-400">
-                  {a.number}
-                </span>
-                <span className="text-[11px] leading-tight text-muted">{a.title}</span>
-              </div>
-            ))}
-          </div>
+          {/* Assignments + Independent Capstone */}
+<div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+  {ASSIGNMENTS.map((a) => (
+    <div
+      key={a.number}
+      className="flex min-h-[86px] flex-col items-start justify-center gap-1 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 transition-colors group-hover:border-crimson-500/20"
+    >
+      <span className="font-heading text-lg font-semibold text-crimson-400">
+        {a.number}
+      </span>
+
+      <span className="text-[11px] leading-tight text-muted">
+        {a.title}
+      </span>
+    </div>
+  ))}
+
+  {/* Capstone */}
+  <div className="flex min-h-[86px] flex-col items-start justify-center gap-1 rounded-xl border border-crimson-500/30 bg-crimson-500/[0.08] px-4 py-3 transition-colors group-hover:border-crimson-500/50">
+    <span className="font-heading text-lg font-semibold text-crimson-400">
+      🏆
+    </span>
+
+    <span className="text-[11px] leading-tight text-crimson-200">
+      Capstone Project
+    </span>
+  </div>
+</div>
 
           <p className="mt-6 text-sm font-medium text-muted">
             {FLYRANK_INTERNSHIP.duration} · {FLYRANK_INTERNSHIP.track}
