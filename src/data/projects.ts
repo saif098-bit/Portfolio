@@ -99,4 +99,17 @@ export const PROJECTS: Project[] = [
   tech: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Ollama", "Docker"],
   githubUrl: "https://github.com/saif098-bit/flyrank-capstone-image-relevance",
  },
+ {
+    id: "heart-disease-prediction",
+    title: "Heart Disease Prediction (ML Pipeline Workshop)",
+    description:
+      "An end-to-end machine learning pipeline built during the InfinityWave internship's ML workshops — predicts heart disease from patient clinical data using an SVM classifier, achieving 91.3% test accuracy.",
+    bullets: [
+      "Built a complete ML pipeline covering data preprocessing, model training, validation, and testing on a real patient health dataset.",
+      "Trained and evaluated a Support Vector Machine classifier, achieving 91.3% test accuracy on unseen data.",
+      "Applied structured workshop methodology to a real-world dataset, translating theoretical ML pipeline concepts into a working, evaluated model.",
+    ],
+    tech: ["Python", "pandas", "NumPy", "scikit-learn", "matplotlib", "seaborn"],
+    githubUrl: "https://github.com/saif098-bit/infinity-wave-internship/tree/main/heart-disease-prediction",
+  },
 ];
