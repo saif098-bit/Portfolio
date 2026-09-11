@@ -21,7 +21,6 @@ export const PROJECTS: Project[] = [
     ],
     tech: ["Python", "Flask", "SQLAlchemy", "SQLite", "OpenAI", "Groq"],
     githubUrl: "https://github.com/saif098-bit/smart-medicine-system",
-    featured: true,
   },
   {
     id: "smart-attendance-system",
@@ -34,7 +33,6 @@ export const PROJECTS: Project[] = [
     ],
     tech: ["Python", "Flask", "PostgreSQL", "Pandas", "Matplotlib"],
     githubUrl: "https://github.com/saif098-bit/Smart-Attendance-System",
-    featured: true,
   },
   {
     id: "ai-email-automation",
@@ -98,6 +96,7 @@ export const PROJECTS: Project[] = [
   ],
   tech: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Ollama", "Docker"],
   githubUrl: "https://github.com/saif098-bit/flyrank-capstone-image-relevance",
+  featured: true,
  },
  {
     id: "heart-disease-prediction",

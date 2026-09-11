@@ -12,6 +12,40 @@ export interface Certificate {
 
 export const CERTIFICATES: Certificate[] = [
   {
+  id: "AI-Fluency",
+  title: "AI Fluency",
+  issuer: "FlyRank AI",
+  date: "Sep 2026",
+  format: "pdf",
+  file: "/images/certificates/AI-Fluency.pdf",
+  thumbnail: "/images/certificate-thumbs/AI-Fluency.jpg",
+  description:
+    "A completed AI Fluency internship program focused on technical competency, professional conduct, and collaborative contribution at FlyRank.",
+  verifyUrl: "https://internship.flyrank.ai/verify/FR-D11-D2B96-C8302?first_name=Malik",
+  },
+  {
+  id: "Backend-AI-Engineering",
+  title: "Backend AI Engineering",
+  issuer: "FlyRank AI",
+  date: "Sep 2026",
+  format: "pdf",
+  file: "/images/certificates/Backend-Engineering.pdf",
+   thumbnail: "/images/certificate-thumbs/Backend-Engineering.jpg",
+  description:
+    "A completed Backend AI Engineering internship program focused on backend engineering skills, technical competency, and professional contribution at FlyRank.",
+  verifyUrl: "https://internship.flyrank.ai/verify/FR-D11-A485C-A2F00?first_name=Malik",
+  },
+  {
+  id: "AI-ML-Engineer-Intern",
+  title: "AI/ML Engineer Intern",
+  issuer: "Infinity Wave",
+  date: "Aug 2026",
+  format: "image",
+  file: "/images/certificates/ML-Intern.png",
+  description:
+    "A three-month AI/ML Engineer internship focused on practical experience in artificial intelligence and machine learning at Infinity Wave.",
+  },
+  {
     id: "AI-Fluency-for-Builders",
     title: "AI Fluency for Builders",
     issuer: "Anthropic Academy",

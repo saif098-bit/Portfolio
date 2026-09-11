@@ -9,7 +9,7 @@ export interface CaseStudyItem {
 export const INFINITYWAVE_INTERNSHIP = {
   company: "InfinityWave Inc.",
   role: "Data Annotator",
-  duration: "1 Month",
+  duration: "3 Months",
   track: "ML Pipeline & Computer Vision Data",
   summary:
     "A hands-on internship combining structured workshops on the end-to-end machine learning pipeline with real-world data annotation work for InfinityWave's cricket computer vision project.",
